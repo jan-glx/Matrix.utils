@@ -6,11 +6,11 @@
 \title{Merges two Matrices or matrix-like objects}
 \usage{
 \method{merge}{Matrix}(x, y, by.x, by.y, all.x = TRUE, all.y = TRUE,
-  out.class = class(x), fill.x = ifelse(is(x, "sparseMatrix"), FALSE, NA),
+  out.class = class(x)[1], fill.x = ifelse(is(x, "sparseMatrix"), FALSE, NA),
   fill.y = fill.x, ...)
 
 join.Matrix(x, y, by.x, by.y, all.x = TRUE, all.y = TRUE,
-  out.class = class(x), fill.x = ifelse(is(x, "sparseMatrix"), FALSE, NA),
+  out.class = class(x)[1], fill.x = ifelse(is(x, "sparseMatrix"), FALSE, NA),
   fill.y = fill.x, ...)
 }
 \arguments{
